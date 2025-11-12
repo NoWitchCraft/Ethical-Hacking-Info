@@ -1,6 +1,6 @@
 # 🛡️ Die größte deutschsprachige Ethical Hacking Datenbank
 
-## 🔥 Willkommen bei [Repository-Name]
+## 🔥 Willkommen bei Ethical-Hacking-Info
 
 Dieses Repository hat das ehrgeizige Ziel, die **umfassendste und qualitativ hochwertigste Wissensdatenbank** für Ethical Hacking, Penetration Testing und Cyber Security in deutscher Sprache zu werden.
 
