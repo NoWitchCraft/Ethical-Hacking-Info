@@ -33,6 +33,10 @@ Unsere Datenbank ist thematisch in Ordner unterteilt, um eine klare Navigation z
 
 ### 🔎 1. Navigieren und Lernen
 
+#### Geführtes Studium
+* Starten Sie mit dem Ordner **`lernpfade_curriculum/`**, um sich durch die Inhalte führen zu lassen.
+
+#### Selbst Studium
 * Beginnen Sie mit dem Ordner **`konzepte_systeme/`**, um ein solides theoretisches Fundament aufzubauen.
 * Tauchen Sie in **`angriffstechniken/`** ein, um die praktischen Schritte hinter den Schwachstellen zu verstehen.
 * Nutzen Sie die Suchfunktion von GitHub, um spezifische Begriffe schnell zu finden.
