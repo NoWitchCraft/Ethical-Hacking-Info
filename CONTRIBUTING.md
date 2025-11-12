@@ -1,11 +1,13 @@
 # 🤝 Mitwirken an der Ethical Hacking Datenbank
 
-Vielen Dank für Ihr Interesse, die größte deutschsprachige Ethical Hacking Datenbank mitzugestalten! Ihr Wissen ist der Schlüssel zum Erfolg dieses Projekts. Bevor Sie beginnen, lesen Sie bitte dieses Dokument und unseren Verhaltenskodex.
+Vielen Dank für Ihr Interesse, die größte deutschsprachige Ethical Hacking Datenbank mitzugestalten! Ihr Wissen ist der Schlüssel zum Erfolg dieses Projekts.
 
 ## 📜 1. Verhaltenskodex (Code of Conduct)
 
 Um eine positive und konstruktive Community aufzubauen, bitten wir alle Mitwirkenden, unseren Verhaltenskodex zu respektieren.
-> [Fügen Sie hier einen Link zu Ihrer **CODE_OF_CONDUCT.md** ein, sobald diese erstellt wurde.]
+> **Link:** [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
+
+---
 
 ## 🚀 2. So tragen Sie bei – Der Workflow
 
@@ -13,127 +15,55 @@ Wir nutzen den standardmäßigen "Fork & Pull Request"-Workflow von GitHub.
 
 1.  **Repository Forken:** Erstellen Sie eine Kopie (einen *Fork*) dieses Haupt-Repositories in Ihrem eigenen GitHub-Konto.
 2.  **Branch erstellen:** Klonen Sie Ihren Fork lokal und erstellen Sie einen neuen Branch für Ihre Änderungen.
-    * **Namenskonvention:** Nutzen Sie aussagekräftige Namen.
-        * Für neue Einträge: `feat/neuer-angriff-titel`
-        * Für Korrekturen: `fix/rechtschreibfehler-readme`
-3.  **Änderungen vornehmen:** Fügen Sie Ihren neuen Datenbank-Eintrag hinzu oder bearbeiten Sie einen bestehenden (siehe Abschnitt 3).
+    * **Namenskonvention:** Nutzen Sie aussagekräftige Namen, z.B. `feat/neuer-angriff-titel` oder `fix/rechtschreibfehler-readme`.
+3.  **Änderungen vornehmen:** Fügen Sie Ihren Eintrag in den korrekten Ordner ein (siehe Abschnitt 3).
 4.  **Committen:** Führen Sie einen aussagekräftigen Commit durch.
-    * **Guter Commit-Titel:** "Feat: Neuer Eintrag zu Subdomain Enumeration"
-    * **Schlechter Commit-Titel:** "Änderungen gemacht"
-5.  **Pull Request (PR) erstellen:** Senden Sie Ihren Branch als **Pull Request** vom Fork zurück an den `main`-Branch des Haupt-Repositories.
-    * Beschreiben Sie Ihren Beitrag im PR so detailliert wie möglich.
+5.  **Pull Request (PR) erstellen:** Senden Sie Ihren Branch als **Pull Request** zurück an den `main`-Branch.
 
-## 🗂️ 3. Standard für Datenbank-Einträge
+> **Wichtig:** Bitte erstellen Sie **vor** dem PR ein **Issue**, um Ihren Beitrag anzukündigen und sicherzustellen, dass keine Doppelarbeit geleistet wird (siehe Abschnitt 4).
 
-Um Konsistenz zu gewährleisten, **muss** jeder neue Datenbankeintrag das folgende Markdown-Template verwenden.
+---
 
-### 3.1. Template-Struktur
+## 🗂️ 3. Ordnerstruktur und Templates
 
-📝 Entwurf: Template für Konzepte & Systeme
-Dieses Template sollte für erklärungsbedürftige Begriffe, Architekturen, Protokolle oder Verteidigungsstrategien verwendet werden. Speichern Sie diese Einträge in einem passenden Ordner wie z.B. concepts/ oder technologies/.
-```markdown
-# [Name des Konzepts/Systems]
+Bitte stellen Sie sicher, dass Ihr Beitrag im korrekten Ordner abgelegt wird und das zugehörige Template verwendet.
 
-## 📝 Kurzbeschreibung
+### 3.1. Die Hauptordnerstruktur
 
-[Maximal 2-3 Sätze, die das Konzept/System in seiner Essenz definieren und seinen Zweck im Kontext der IT-Sicherheit erklären.]
+| Ordner | Inhalt | Zugehöriges Template |
+| :--- | :--- | :--- |
+| `konzepte_systeme/` | Erklärungen von Protokollen, Architekturen und Begriffen. | **Konzept-Template** |
+| `angriffstechniken/` | Allgemeine, nicht-zielsystemspezifische Angriffsmethoden. | **Angriffstechnik-Template** |
+| `zielsysteme/` | Systemspezifische Schwachstellen und Anleitungen (z.B. Web, Cloud, Mobile). | Beide Templates möglich |
+| `tools_anleitungen/` | Anleitungen zur Einrichtung und Nutzung von Hacking-Tools. | Konzept-Template (angepasst) |
+| `lernpfade_curriculum/` | **NEU:** Nur zur Erstellung von kuratierten Lernpfaden/Lehrplänen. | **Kein Template nötig.** Nur interne Links zu anderen Dateien. |
+| `reporting_vorlagen/` | Checklisten und Muster-Berichtsvorlagen. | **Kein Template nötig.** |
 
-## 📖 Hintergrund & Funktionsweise
-
-### Was ist es?
-[Detaillierte Erklärung des Begriffs oder der Technologie. Beschreiben Sie die grundlegenden Mechanismen und Komponenten.]
-
-* **Entwickelt von/Wann:** [Falls relevant: Wer hat es entwickelt und wann?]
-* **Wichtige Komponenten/Phasen:** [Listen Sie die Kernelemente oder die Schritte des Prozesses auf.]
-
-### 🔄 Einsatzszenario
-
-[Beschreiben Sie, in welchem Kontext oder in welchen Umgebungen dieses Konzept/System typischerweise eingesetzt wird. (z.B. "Wird im Unternehmensnetzwerk zur Authentifizierung verwendet.")]
-
-## 🛡️ IT-Sicherheitsrelevanz
-
-[Dieser Abschnitt ist das Herzstück der Datenbank und verbindet das Konzept direkt mit der IT-Sicherheit.]
-
-### 🚨 Schwachstellen & Risiken
-
-[Welche potenziellen Sicherheitslücken oder Fehlkonfigurationen sind mit diesem System/Konzept verbunden?]
-
-* **Risiko 1:** [Erklärung des Risikos, z.B. "Fehlende Protokollierung führt zu Blindspots."]
-* **Risiko 2:** [Erklärung des Risikos, z.B. "Standardkonfigurationen sind anfällig für [Angriffsart]."]
-
-### ⚔️ Angriffsvektoren (Ethical Hacking)
-
-[Wie kann ein Ethical Hacker dieses System/Konzept ausnutzen oder testen?]
-
-* **Vektor:** [Kurzer Titel, z.B. "Pass-the-Hash-Angriffe bei Kerberos"]
-    * **Beschreibung:** [Kurze Erklärung des Vorgehens.]
-    * **Relevante Tools:** [z.B. Impacket, Metasploit-Modul]
-
-## ✅ Empfehlungen & Best Practices
-
-[Wie kann die Sicherheit im Umgang mit diesem System/Konzept verbessert werden? (Verteidiger-Perspektive).]
-
-1.  **Konfiguration:** [Spezifische Konfigurationshärten.]
-2.  **Monitoring:** [Was sollte überwacht werden?]
-3.  **Architektur:** [Design-Empfehlungen (z.B. Segmentierung, Least Privilege).]
-
-## 🔗 Referenzen & Weiterführende Links
-
-* [Offizielle Dokumentation (Hersteller/Standard-Gremium)]
-* [Akademische oder branchenführende Analyse]
-* [Deutschsprachiger Fachartikel]
-```
-
-#### 📝 Entwurf: Angriffe
-Erstellen Sie die Datei im passenden Unterordner (z.B. `web_applications/`) und benennen Sie sie nach dem Angriff (z.B. `sql_injection_blind.md`).
-
-```markdown
-# [Titel des Eintrags/Angriffstechnik]
-
-## 📝 Kurzbeschreibung
-
-[Maximal 2-3 Sätze, die den Angriff/die Technik kurz zusammenfassen.]
-
-## 🎯 Betroffene Systeme / Anwendungsfälle
-
-* Welche Systeme sind typischerweise betroffen? (z.B. Webserver, Linux-Kernel, Mobile Apps)
-* In welcher Phase des Pentests wird diese Technik angewendet? (z.B. Reconnaissance, Exploitation)
-
-## 🛠️ Schritte zur Durchführung (PoC - Proof of Concept)
-
-[Eine klare, schrittweise Anleitung, wie der Angriff durchgeführt werden kann.]
-
-1.  Schritt 1: [Befehl, Tool oder Vorgehen]
-2.  Schritt 2: [Befehl, Tool oder Vorgehen]
-
-### Beispiel-Code / Tools
-```bash
-# Beispiel für einen Befehl, der das Vorgehen illustriert
-ping -c 3 example.com
-
-## 🛡️ Empfohlene Gegenmaßnahmen
-[Wie kann dieser Angriff verhindert oder abgeschwächt werden? Konkrete Maßnahmen.]
-- Maßnahme 1: [Technische Umsetzung]
-- Maßnahme 2: [Organisatorische Vorkehrung]
-
-## 🔗 Referenzen & Weiterführende Links
-- [OWASP-Link oder CVE-ID]
-- [Weiterführender deutschsprachiger Artikel]
-- [Englischsprachige Quelle (optional)]
-```
 ### 3.2. Wichtige Regeln für Inhalte
 
-* **Sprache:** Alle Beiträge müssen in **hochwertigem Deutsch** verfasst sein (Fachbegriffe sind erlaubt).
-* **Lesbarkeit:** Verwenden Sie Überschriften, Listen und Markdown-Formatierung, um den Text leicht lesbar zu machen.
-* **Originalität/Quellen:** Verlinken Sie bitte immer die ursprünglichen Quellen oder Referenzen am Ende des Eintrags.
-* **Kein illegaler Inhalt:** Das Repository dient ausschließlich der **Ethical Hacking Ausbildung** und der **Verbesserung der Sicherheit**. Alle Beiträge müssen diesem ethischen Grundsatz entsprechen.
+* **Sprache:** Alle Beiträge müssen in **hochwertigem Deutsch** verfasst sein.
+* **Dateiformat:** Verwenden Sie ausschließlich **Markdown (`.md`)**.
+* **Konsistenz:** Ein neuer Eintrag muss **immer** auf einem der beiden Vorlagen (Angriffstechnik oder Konzept) basieren.
 
-## 🏷️ 4. Issues und Diskussionen
+> **Template-Link:** Die vollständigen Templates finden Sie zur Einsicht im Ordner `.github/ISSUE_TEMPLATE/`.
 
-Wenn Sie sich nicht sicher sind, ob ein Thema relevant ist, oder wenn Sie einen Fehler gefunden haben:
+---
 
-1.  **Issue erstellen:** Nutzen Sie die GitHub Issues, um Bugs zu melden, neue Themen vorzuschlagen oder Fragen zu stellen.
-2.  **Labels verwenden:** Wir nutzen Labels (z.B. `bug`, `feature request`, `good first issue`) zur Kategorisierung.
-3.  **Keine sensiblen Daten:** Posten Sie niemals Passwörter, private Schlüssel oder andere sensible Informationen in Issues oder Pull Requests.
+## 🏷️ 4. Issue-Templates verwenden
+
+Jeder signifikante Beitrag sollte mit einem zugehörigen Issue begonnen werden. Dies hilft uns, Ihren Beitrag schnell zu kategorisieren und zu überprüfen.
+
+| Art des Beitrags | Empfohlenes Issue-Template |
+| :--- | :--- |
+| **Neuer Eintrag** zur Datenbank (Angriff oder Konzept) | ✍️ **Neuer Datenbank-Eintrag** |
+| **Fehler melden** in bestehenden Dateien | 🐛 **Fehler oder Korrektur melden** |
+| **Vorschläge** zur Struktur oder Tools | ✨ **Verbesserung vorschlagen** |
+
+---
+
+## 🔒 5. Ethische Grundsätze und Lizenz
+
+* **Ethische Verantwortung:** Das Repository dient ausschließlich der **Ethical Hacking Ausbildung**. Beiträge, die auf illegale Aktivitäten abzielen, werden abgelehnt.
+* **Lizenz:** Durch das Einreichen eines Beitrags stimmen Sie zu, dass Ihr Inhalt unter der **[MIT-Lizenz](LICENSE)** veröffentlicht wird.
 
 Wir freuen uns auf Ihre Beiträge!
